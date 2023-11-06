@@ -5,7 +5,7 @@ import com.serey.springboot.learnspringframework.game.MarioGame;
 import com.serey.springboot.learnspringframework.game.PacmanGame;
 import com.serey.springboot.learnspringframework.game.SuperContraGame;
 
-public class AppGamingBasiscJava {
+public class App02HelloWorldSpring {
 
 	public static void main(String[] args) {
 //		var game = new MarioGame();
