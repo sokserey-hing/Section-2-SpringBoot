@@ -1,5 +1,7 @@
 package com.serey.springboot.learnspringframework;
 
+import java.util.Arrays;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.serey.springboot.learnspringframework.game.GameRunner;
@@ -29,8 +31,19 @@ public class App01GamingBasiscJava {
 		System.out.println(context.getBean("person3Parameters"));
 
 		System.out.println(context.getBean("address2"));
-
+		
+		System.out.println(context.getBean(Person.class));
 		System.out.println(context.getBean(Address.class));
+		
+		System.out.println(context.getBean("person5Qualifier"));
+		
+//		System.out.println("All the BeanDefinition are: ");
+//		Arrays.stream(context.getBeanDefinitionNames())
+//			.forEach(System.out::println);
+		
+		
+		
+		
 		
 		
 		
