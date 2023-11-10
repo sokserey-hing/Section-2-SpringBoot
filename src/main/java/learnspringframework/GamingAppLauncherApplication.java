@@ -11,13 +11,12 @@ import com.serey.springboot.learnspringframework.game.GamingConsole;
 
 @Configuration
 @ComponentScan("com.serey.springboot.learnspringframework.game")
-public class App03GamingSpringBeans {	
+public class GamingAppLauncherApplication {	
 
 	
 	public static void main(String[] args) {
 
-		
-		var context = new AnnotationConfigApplicationContext(App03GamingSpringBeans.class);
+		var context = new AnnotationConfigApplicationContext(GamingAppLauncherApplication.class);
 		try(context){
 			context.getBean(GamingConsole.class).up();
 			context.getBean(GameRunner.class).run();
