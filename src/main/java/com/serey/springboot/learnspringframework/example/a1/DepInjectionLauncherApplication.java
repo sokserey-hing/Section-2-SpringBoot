@@ -21,6 +21,7 @@ class YourBusinessClass {
 	
 //	@Autowired // this is called constructor injection 
 	// for constructor injection @Autowired is not mandatory
+	//Spring team recommended constructor base injection 
 	public YourBusinessClass(Dependency1 dependency1, Dependency2 dependency2) {
 		super();
 		System.out.println("Constructor Injction - YourBusinessClass");
