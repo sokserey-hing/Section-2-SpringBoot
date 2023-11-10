@@ -1,22 +1,19 @@
-package learnspringframework;
+package com.serey.springboot.learnspringframework.game;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-import com.serey.springboot.learnspringframework.game.GameRunner;
-import com.serey.springboot.learnspringframework.game.GamingConsole;
-
 
 
 @Configuration
 @ComponentScan("com.serey.springboot.learnspringframework.game")
-public class GamingAppLauncherApplication {	
+public class DepInjectionLauncherApplication {	
 
 	
 	public static void main(String[] args) {
 
-		var context = new AnnotationConfigApplicationContext(GamingAppLauncherApplication.class);
+		var context = new AnnotationConfigApplicationContext(DepInjectionLauncherApplication.class);
 		try(context){
 			context.getBean(GamingConsole.class).up();
 			context.getBean(GameRunner.class).run();
